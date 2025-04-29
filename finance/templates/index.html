@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<h1>Your Profile</h1>
+
+<p>Current Cash: ${{ cash | usd }}</p>
+<p>Portfolio Value: ${{ total_value | usd }}</p>
+
+<center><table border="1">
+    <tr>
+        <th>Symbol</th>
+        <th>Shares</th>
+        <th>Price</th>
+        <th>Total Value</th>
+    </tr>
+
+    {% for row in rows %}
+    <tr>
+        <td>{{ row['stock'] }}</td>
+        <td>{{ row['total_shares'] }}</td>
+        <td>{{ row['actual_price'] | usd }}</td>
+        <td>${{ row['value'] | usd }}</td>
+    </tr>
+    {% endfor %}
+
+</table></center>
+
+{% endblock %}

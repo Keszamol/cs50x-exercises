@@ -1,0 +1,25 @@
+body {
+    background-color: grey;
+}
+
+.focus {
+    text-align: center;
+}
+
+#alarm {
+    color: red;
+}
+
+* {
+    color: white;
+    text-align: center;
+}
+
+h1, h3 {
+    color: white;
+}
+
+li {
+    color: white;
+    text-align: left;
+}

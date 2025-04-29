@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy Stocks
+{% endblock %}
+
+{% block main %}
+
+<h1>Buy</h1>
+<br>
+<form action="/buy" method="post">
+    <!-- Input für das Aktien-Symbol -->
+    <input name="symbol" placeholder="Symbol" required></input>
+
+    <!-- Input für die Anzahl der zu kaufenden Aktien -->
+    <input name="shares" type="number" placeholder="Amount to buy" required></input>
+    <button name="submit" type="submit">Submit</button>
+</form>
+<br>
+
+<p>Your Cash: ${{ cash | usd }}</p>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+<h1>Your Transaction History</h1>
+<br>
+<center><table border="1">
+    <tr>
+        <th>Stock</th>
+        <th>Shares</th>
+        <th>Price</th>
+        <th>Date</th>
+    </tr>
+    {% for row in rows %}
+    <tr>
+        <td>{{ row['stock'] }}</td>
+        {% if row['value'] < 0 %}
+            <!-- Wenn es sich um einen Verkauf handelt, dann zeigen wir die negative Zahl -->
+            <td>{{ row['value'] }}</td>
+        {% else %}
+            <!-- Wenn es sich um einen Kauf handelt, dann zeigen wir die positive Zahl -->
+            <td>{{ row['share'] }}</td>
+        {% endif %}
+        <td>{{ row['Price'] | usd }}</td>
+        <td>{{ row['date'] }}</td>
+    </tr>
+    {% endfor %}
+</table></center>
+{% endblock %}
