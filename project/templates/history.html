@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>My History</h1>
+
+    <border class="card">
+      <h4>Description:</h4>
+      <li>Here you can click on the corresponding date to view your past entries.</li>
+      <li>Simply select a date to view your entries for that day.</li>
+    </border>
+  
+
+    <border class="card">
+    <form method="post" action="/history" class="mb-4">
+        <label for="date">Select a date:</label>
+        <input type="date" id="date" name="date" class="form-control" required>
+        <br>
+          <button>Show Entries</button>
+    </form>
+  {% if entry %}
+        <h5>{{ selected_date }}</h5>
+        <h4>Your Entry:</h4>
+        <br>
+
+        <table class="table table-bordered">
+          <h4>Overview of Mood</h4>
+          <thead>
+            <th>Work</th>
+            <th>Family</th>
+            <th>Friends</th>
+            <th>Selfcare</th>
+          </thead>
+          <tbody>
+            <td>{{ entry.mood_work }}</td>
+            <td>{{ entry.mood_family }}</td>
+            <td>{{ entry.mood_friends }}</td>
+            <td>{{ entry.mood_selfcare }}</td>
+          </tbody>
+        </table>
+
+        <br>
+
+        <table class="table table-bordered">
+          <h4>Gratitude and Highlights</h4>
+          <thead>
+            <th>Gratitude</th>
+            <th>Highlight</th>
+          </thead>
+          <tbody>
+            <td>{{ entry.gratitude }}</td>
+            <td>{{ entry.highlight }}</td>
+          </tbody>
+        </table>
+  {% elif searched %}
+      <p>No entry found for {{ selected_date }}.</p>
+  </border>
+  {% endif %}
+{% endblock %}
