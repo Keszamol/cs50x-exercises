@@ -107,19 +107,18 @@ Die Einteilung erfolgt nach CS50x-Wochen (Häkchen nach Abschluss der Woche):
 | 2     | Arrays                            | ✔️     |
 | 3     | Algorithmen                       | ✔️     |
 | 4     | Memory                            | ✔️     |
-| 5     | Data Structures                   | ⬜     |
+| 5     | Data Structures                   | ✔️     |
 | 6     | Python                            | ✔️     |
 | 7     | SQL                               | ✔️     |
 | 8     | HTML, CSS & JavaScript            | ✔️     |
 | 9     | Flask                             | ✔️     |
-| 10    | The End                           | ⬜     |
+| 10    | The End                           | ✔️     |
 
 ---
 
 ## Ausblick
 
 - Mein aktuelles **Abschlussprojekt** findest du hier: [mein-abschlussprojekt](https://github.com/Keszamol/cs50x-project)
-- Weitere eigene Projekte und tiefergehende Übungen folgen.
 
 ---
 
