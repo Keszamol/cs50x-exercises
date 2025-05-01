@@ -58,6 +58,7 @@ cs50x-exercises/
 │   ├── sentimental-cred... (usw.)
 ├── songs/               # Song-Datenanalyse (Python)
 ├── sort/                # Sortieralgorithmen (C)
+├── speller/             # Rechtschreibprüfung (C)
 ├── substitution/        # Ersetzungs-Chiffre (C)
 ├── trivia/              # Trivia-Spiel (C)
 ├── volume/              # Volumenberechnung (C)
