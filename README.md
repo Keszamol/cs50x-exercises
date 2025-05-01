@@ -39,7 +39,7 @@ cs50x-exercises/
 ├── half/                # Halbierungs-Übung (C)
 ├── homepage/            # Persönliche Homepage (HTML/CSS/JS)
 ├── hours/               # Stunden-Umrechner (Python)
-├── inheritance/		 # Vererbung von Blutgruppen (C)
+├── inheritance/         # Vererbung von Blutgruppen (C)
 ├── mario-less/          # Mario (weniger) Pyramide (C)
 ├── mario-more/          # Mario (mehr) Pyramide (C)
 ├── me/                  # "Me"-Programm (C)
