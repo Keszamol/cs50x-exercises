@@ -117,7 +117,7 @@ Die Einteilung erfolgt nach CS50x-Wochen (Häkchen nach Abschluss der Woche):
 
 ## Ausblick
 
-- Mein aktuelles **Abschlussprojekt** findest du hier: [mein-abschlussprojekt](https://github.com/<dein-github-username>/mein-abschlussprojekt)
+- Mein aktuelles **Abschlussprojekt** findest du hier: [mein-abschlussprojekt](https://github.com/Keszamol/cs50x-project)
 - Weitere eigene Projekte und tiefergehende Übungen folgen.
 
 ---
